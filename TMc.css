@@ -6,6 +6,7 @@ body {
 	margin-left: 0;
 	margin-top: 0;
 	height: 100%;
+	font-family: sans-serif;
 }
 #Container {
 	margin-left:auto;
@@ -16,16 +17,16 @@ body {
 	}
 
 #Content {
-	width:790px;
 	height:100%;
 }
+/*
 #Right {
 	float:right;
 	color:#000;
-	width: 570px;
 	padding-left:15px;
 	height:100%;
 }
+*/
 #Left {
 	float: left;
 	width:200px;
@@ -41,7 +42,43 @@ body {
     text-align: left;
 }
 
+.hover-image {
+    border: 1px solid green;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.hover-content {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.hover-content:hover {
+    opacity: 1.0;
+}
+.hover-content span {
+    position: absolute;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    display: block;
+    height: 1.3em;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
 .copyright {
 	font-size:12px;
 	color:#000;
 }
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
