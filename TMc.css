@@ -12,12 +12,13 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	background:#dbdbdb;
-	width:800px;
+/*	width:800px;*/
 	height:100%;
 	}
 
 #Content {
 	height:100%;
+	width:800px;	
 	display: inline-block;
 }
 
