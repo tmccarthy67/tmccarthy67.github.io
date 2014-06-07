@@ -1,15 +1,16 @@
 .jumbotron
 {
 	background-color:#f00;
-	border: 2px solid black;
 }
 
 .jumbotron h1 {
     color:#fff;
+    margin-top: 10px;
 }
 
 .jumbotron p {
-    color:#ccc
+    color:#ccc;
+    margin-bottom: 10px;
 }
 
 ul.redButtonUp li.active a{
@@ -25,11 +26,12 @@ ul.redButtonUp li a {
 }
 
 .notHome {
-    margin: 0;
+    margin: 5px;
     padding: 0;
     color: #fff;
     }
 
-.snow {
+.jumbotron p.snow {
     color: #fff;
+    margin: 0;
 }
