@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="stopWatch.css">
+</head>
+<body>
+
+	<div class="time"> 00:00.00 </div>
+
+
+	<!-- http://momentjs.com/ ...because it makes life a lot easier :P -->
+	<script src="http://momentjs.com/downloads/moment.min.js"></script>
+
+	<script>
+
+	  // is called when document is clicked
+		function documentClicked(){
+
+			// get the current time
+			var start = moment();
+
+			// do this 100 times a second
+			setInterval(function(){
+
+				// format the elapsed timespan between now and start
+				var now = moment();
+				var timeString = moment(now - start).format('mm:ss:SS');
+
+				// set the content of the .time div
+				var timeDiv = document.querySelector('.time');
+				timeDiv.innerHTML = timeString;
+
+			}, 10); // 10 miliseconds -> 100 times  a second
+
+		};
+
+
+
+		function main(){
+			// when document is clicked, call the documentClicked function
+			document.addEventListener('click', documentClicked);
+		}
+
+		// call main function when document is loaded
+		document.addEventListener('DOMContentLoaded', main);
+
+
+
+	</script>
+
+</body>
+</html>

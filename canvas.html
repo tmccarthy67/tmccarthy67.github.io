@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        canvas {
+                display:block;
+                margin:0px auto;
+                height:600px;
+                width:400px;
+                border:none;
+            }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="800" height="900"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+
+
+      context.beginPath ();
+      context.fillStyle = "#A17B15";
+      context.fillRect (475,0,250,15);
+      context.fillRect (500,15,200,200);
+      context.fillRect (475,215,250,15);
+      context.fillRect (500,230,200,400);
+      context.fillRect (475,630,250,15);
+
+
+      context.stroke();
+
+    </script>
+  </body>
+</html>
