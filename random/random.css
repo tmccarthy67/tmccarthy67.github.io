@@ -1,0 +1,16 @@
+body {
+	font-family: sans-serif;
+}
+H1 {
+	text-align: center;
+	font-size: 48px;
+}
+
+
+.numberDisplay {
+	text-align: center;
+	margin: 15px;
+	padding: 15px;
+	font-size: 36px;
+	color: red;
+}
