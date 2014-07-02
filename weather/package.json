@@ -1,0 +1,14 @@
+{
+  "name": "weather",
+  "version": "0.0.1",
+  "description": "Go out on the internet and get the weather",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TMc",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.36.0"
+  }
+}
